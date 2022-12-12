@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^35.0.1",
-    "@ckeditor/ckeditor5-react": "^5.0.2",
-    "@ckeditor/ckeditor5-source-editing": "^35.3.2"
+    "@ckeditor/ckeditor5-react": "^5.0.2"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
