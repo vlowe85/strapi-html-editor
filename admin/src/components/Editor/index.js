@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import SourceEditing from '@ckeditor/ckeditor5-source-editing/src/sourceediting';
 import { Box } from "@strapi/design-system/Box";
 
 const Wrapper = styled(Box)`
@@ -16,6 +17,9 @@ const Wrapper = styled(Box)`
 `;
 
 const configuration = {
+  plugins: [
+    SourceEditing,
+  ],
   toolbar: [
     "heading",
     "|",
@@ -33,6 +37,8 @@ const configuration = {
     "mediaEmbed",
     "undo",
     "redo",
+    "|",
+    "sourceEditing",
   ],
 };
 
